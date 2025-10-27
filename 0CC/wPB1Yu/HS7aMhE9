@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="30; url=https://ywtb.mps.gov.cn"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>正在跳转...</title>
+<style type="text/css">
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e5799, #207cca, #2989d8, #1e5799);
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1a73e8;
+        }
+        
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(26, 115, 232, 0.2);
+            border-top: 5px solid #1a73e8;
+            border-radius: 50%;
+            margin: 25px auto;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .url-box {
+            background: #f1f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 16px;
+            word-break: break-all;
+            border: 1px solid #d0e3ff;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #0d62da;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info {
+            margin-top: 25px;
+            font-size: 16px;  /* Increased from 14px */
+            color: #ff0000;   /* Changed to red */
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-weight: bold;  /* Added bold */
+        }
+</style>
+</head>
+<body>
+<div class="container">
+        <h1>正在跳转公安部“互联网+政务服务”平台</h1>
+        <div class="loader"></div>
+        <p>您将在 <strong id="countdown">30</strong> 秒内转入公安部“互联网+政务服务”平台</p>
+        
+        <div class="url-box">
+            https://ywtb.mps.gov.cn
+        </div>
+        
+        <p>如果您有自首意愿，请点击下方按钮：</p>
+        <button class="btn" onclick="redirectNow()">立即进去自首</button>
+        
+        <div class="info">
+            <p>温馨提示：您的ip已被记录，五秒后将自动上传网络安全电信诈骗数据库，请等待当地公安机关取证调查。</p>
+        </div>
+    </div>
+<script type="text/javascript">
+//<![CDATA[
+	let seconds = 30;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                redirectNow();
+            }
+        }, 1000);
+        
+        // 立即跳转
+        function redirectNow() {
+            window.location.href = "https://ywtb.mps.gov.cn/";
+        }
+//]]>
+</script>
+</body>
+</html>
