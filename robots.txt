@@ -2,3 +2,4 @@ User-agent: *
 Disallow:
 
 Sitemap: https://vr013.com/sitemap.xml
+Sitemap: https://vr013.com/sitemap_image.xml
