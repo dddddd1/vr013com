@@ -1,6 +1,10 @@
 # Agent skills and configuration
 .agents/
 .agent/
+.workbuddy/
+
+# Scratch / work files
+work/
 
 # Dependencies
 node_modules/
@@ -29,3 +33,6 @@ Thumbs.db
 # Cache
 .cache/
 *.cache
+
+# Utility scripts
+optimize_images.py
