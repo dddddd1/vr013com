@@ -3111,3 +3111,12 @@ span.meta-right {
 h2.widget-title {
 display: block;
 }
+/* MIP 图片布局修复 */
+.site-branding #logo mip-img {
+  width: 75px !important;
+  height: 75px !important;
+}
+.entry-related .thumbnail-wrap mip-img img,
+.sidebar .widget_posts_thumbnail mip-img img {
+  object-fit: cover;
+}
